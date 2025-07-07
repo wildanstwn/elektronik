@@ -21,7 +21,7 @@
         @foreach ($produks as $produk)
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="{{ asset('storage/' . $produk->gambar) }}" class="card-img-top" alt="{{ $produk->nama_produk }}">
+                    <img src="{{ $produk->gambar }}" class="card-img-top" alt="{{ $produk->nama_produk }}">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{ $produk->nama_produk }}</h5>
                         <p class="card-text">{{ \Illuminate\Support\Str::limit($produk->deskripsi, 100) }}</p>

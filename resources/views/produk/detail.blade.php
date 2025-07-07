@@ -4,8 +4,7 @@
 
 @section('content')
     <div class="card mb-4">
-        <img src="{{ asset('storage/' . $produk->gambar) }}" class="card-img-top" style="max-width: 300px; height: auto;" alt="{{ $produk->nama_produk }}">
-        <div class="card-body">
+        <img src="{{ $produk->gambar }}" class="card-img-top" style="max-width: 300px; height: auto;" alt="{{ $produk->nama_produk }}">        <div class="card-body">
             <h5 class="card-title">{{ $produk->nama_produk }}</h5>
             <p class="card-text">{{ $produk->deskripsi }}</p>
             <p class="card-text"><strong>Harga:</strong> Rp{{ number_format($produk->harga, 2) }}</p>
